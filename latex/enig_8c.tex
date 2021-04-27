@@ -1,0 +1,151 @@
+\hypertarget{enig_8c}{}\section{enig.\+c File Reference}
+\label{enig_8c}\index{enig.\+c@{enig.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}enig.\+h\char`\"{}}\newline
+Include dependency graph for enig.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enig_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{enig_8c_a7a9a231e30b47bc0345749c8bd1e5077}\label{enig_8c_a7a9a231e30b47bc0345749c8bd1e5077}} 
+\#define {\bfseries M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}~100
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enig_8c_a4d4ead3f0d4bf7d353da40004f7de4a4}{generate\+\_\+a} (S\+D\+L\+\_\+\+Surface $\ast$screen, char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em To generate an enigme randomly. \end{DoxyCompactList}\item 
+void \hyperlink{enig_8c_ae5f091f4e12f0ce070f3001464c9f5ca}{aff\+\_\+enigme} (\hyperlink{structenigme}{enigme} $\ast$e, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To display the enigma. \end{DoxyCompactList}\item 
+int \hyperlink{enig_8c_ae93c62d7e840b8843567985ba9ae9633}{solution\+\_\+e} (char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em register the solution for each enigma \end{DoxyCompactList}\item 
+int \hyperlink{enig_8c_ae855a03b9d7f7619bac3843306965df9}{resolution} (int $\ast$running, int $\ast$run)
+\begin{DoxyCompactList}\small\item\em read the imput \end{DoxyCompactList}\item 
+void \hyperlink{enig_8c_a4000acf4af9607e9d50a33b70643a99a}{afficher\+\_\+resultat} (S\+D\+L\+\_\+\+Surface $\ast$screen, int s, int r, \hyperlink{structenigme}{enigme} $\ast$en)
+\begin{DoxyCompactList}\small\item\em To display the enigma result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{enig_8c_ae5f091f4e12f0ce070f3001464c9f5ca}\label{enig_8c_ae5f091f4e12f0ce070f3001464c9f5ca}} 
+\index{enig.\+c@{enig.\+c}!aff\+\_\+enigme@{aff\+\_\+enigme}}
+\index{aff\+\_\+enigme@{aff\+\_\+enigme}!enig.\+c@{enig.\+c}}
+\subsubsection{\texorpdfstring{aff\+\_\+enigme()}{aff\_enigme()}}
+{\footnotesize\ttfamily void aff\+\_\+enigme (\begin{DoxyParamCaption}\item[{\hyperlink{structenigme}{enigme} $\ast$}]{e,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To display the enigma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$screen, \\
+\hline
+{\em e} & for enigme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{enig_8c_ae5f091f4e12f0ce070f3001464c9f5ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{enig_8c_a4000acf4af9607e9d50a33b70643a99a}\label{enig_8c_a4000acf4af9607e9d50a33b70643a99a}} 
+\index{enig.\+c@{enig.\+c}!afficher\+\_\+resultat@{afficher\+\_\+resultat}}
+\index{afficher\+\_\+resultat@{afficher\+\_\+resultat}!enig.\+c@{enig.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+resultat()}{afficher\_resultat()}}
+{\footnotesize\ttfamily void afficher\+\_\+resultat (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{int}]{s,  }\item[{int}]{r,  }\item[{\hyperlink{structenigme}{enigme} $\ast$}]{en }\end{DoxyParamCaption})}
+
+
+
+To display the enigma result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$screen, en for enigme \\
+\hline
+{\em int} & s,r \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enig_8c_a4d4ead3f0d4bf7d353da40004f7de4a4}\label{enig_8c_a4d4ead3f0d4bf7d353da40004f7de4a4}} 
+\index{enig.\+c@{enig.\+c}!generate\+\_\+a@{generate\+\_\+a}}
+\index{generate\+\_\+a@{generate\+\_\+a}!enig.\+c@{enig.\+c}}
+\subsubsection{\texorpdfstring{generate\+\_\+a()}{generate\_a()}}
+{\footnotesize\ttfamily void generate\+\_\+a (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+To generate an enigme randomly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$screen \\
+\hline
+{\em char} & $\ast$chaine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{enig_8c_a4d4ead3f0d4bf7d353da40004f7de4a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{enig_8c_ae855a03b9d7f7619bac3843306965df9}\label{enig_8c_ae855a03b9d7f7619bac3843306965df9}} 
+\index{enig.\+c@{enig.\+c}!resolution@{resolution}}
+\index{resolution@{resolution}!enig.\+c@{enig.\+c}}
+\subsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily int resolution (\begin{DoxyParamCaption}\item[{int $\ast$}]{running,  }\item[{int $\ast$}]{run }\end{DoxyParamCaption})}
+
+
+
+read the imput 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & running, run \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+r 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enig_8c_ae93c62d7e840b8843567985ba9ae9633}\label{enig_8c_ae93c62d7e840b8843567985ba9ae9633}} 
+\index{enig.\+c@{enig.\+c}!solution\+\_\+e@{solution\+\_\+e}}
+\index{solution\+\_\+e@{solution\+\_\+e}!enig.\+c@{enig.\+c}}
+\subsubsection{\texorpdfstring{solution\+\_\+e()}{solution\_e()}}
+{\footnotesize\ttfamily int solution\+\_\+e (\begin{DoxyParamCaption}\item[{char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+register the solution for each enigma 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$chaine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+solution 
+\end{DoxyReturn}
